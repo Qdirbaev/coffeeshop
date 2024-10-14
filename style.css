@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --coffee: #C99E71;
+    --bg: #1C1814;
+}
+body{
+    max-width: 1920px;
+    background-color: #14110E;
+    color: #fff;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* Header */
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+.header__burger{
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+
+    position: relative;
+}
+.header__burger span{
+    width: 80%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    
+    position: absolute;
+    transition: 0.5s ease;
+}
+.header__burger span:first-child{
+    top: 25%;
+}
+.header__burger span:nth-child(2){
+    top: 50%;
+}
+.header__burger span:last-child{
+    top: 75%;
+}
+.header__burger.active span:nth-child(2){
+    display: none;
+}
+
+.header__burger.active span:first-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.header__burger.active span:last-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.header__left{
+    display: flex;
+    gap: 48px;
+    
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.header__right-nav{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.header__left a, .header__right-nav a{
+    font-family: "Inter";
+    font-size: 18px;
+    transition: all 1s ease;
+}
+.header__left a:hover, .header__right-nav a:hover{
+    transform: scale(1.05);
+    color: var(--coffee);
+}
+
+@media screen and (max-width: 1250px) {
+    .header__left a:first-child{
+        margin-left: 20px;
+    }
+    .header__bag{
+        margin-right: 30px;
+    }
+}
+@media screen and (width <= 1000px) {
+    .header__burger{
+        display: block;
+    }
+    .header__left{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .header__right-nav{
+        display: none;
+    }
+}
+@media screen and (width <= 700px) {
+    
+}
+
+/* Home */
+.home{
+    background-image: url(images/home-bg.jpg);
+    background-size: cover;
+    background-position: center bottom; 
+}
+.home-inner {
+    display: flex;
+}
+.home__content {
+    padding-top: 147px; 
+    padding-bottom: 166px;
+}
+.home__content h1{
+    margin-bottom: 32px;
+
+    font-family: "Righteous";
+    font-size: 72px;
+    line-height: 93px;
+}
+.home__content p{
+    margin-bottom: 88px;
+    max-width: 511px;
+
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+
+}
+.home__content a{
+    display: inline-block;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 700;
+    padding: 24px 40px;
+    background-color: var(--coffee);
+
+    transition: transform 0.2s ease;
+}
+.home__content a:hover{
+    transform: scale(1.05);
+}
+.home__video{
+    display: flex;
+    align-items: center;
+    width: 53%;
+    position: relative;
+}
+.home__play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+.home__play-btn:hover{
+    transform: scale(1.05);
+}
+@media screen and (max-width: 1250px) {
+    .home__content{
+        margin-left: 50px;
+    }
+    .home{
+        background-position: right;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    
+}
+@media screen and (width <= 700px) {
+    .home__video{
+        display: none;
+    }
+    .home__content{
+        text-align: center;
+    }
+}
+
+/* Preference */
+.preference {
+    margin: 140px 0;
+}
+.preference-inner {
+    display: flex;
+    gap: 36px;
+}
+
+.preference__box p{
+    font-family: "Righteous";
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+.preference__box p span{
+    color: var(--coffee);
+    margin-right: 12px;
+}
+
+/* History */
+.history {
+    margin-bottom: 140px;
+}
+.history-inner {
+    display: flex;
+    gap: 32px;
+}
+.history__gallery{
+    display: flex;
+    gap: 32px;
+}
+.history__gallery-1 img:first-child{
+    margin-bottom: 32px;
+}
+
+.history__content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    justify-content: center;
+    padding: 56px;
+}
+
+.history__our {
+    color: var(--coffee);
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+.history__content h1{
+    font-family: "Righteous";
+    font-size: 48px;
+    line-height: 62.4px;
+
+    margin-bottom: 36px;
+}
+.history__subtitle {
+    opacity: 0.8;
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-transform: capitalize;
+}
+
+/* Product */
+.product {
+    margin-bottom: 140px;
+}
+.product-top {
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--coffee);
+    text-align: center;
+}
+.product__title{
+    font-family: "Righteous";
+    font-size: 48px;
+    margin-top: 12px;
+    margin-bottom: 56px;
+    text-align: center;
+}
+.product__items {
+    display: flex;
+    justify-content: space-between;
+}
+.product__item {
+    padding: 48px 48px 40px 48px;
+    flex-direction: column;
+    text-align: center;
+}
+.product__item h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.product__item p{
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.product__item-image{
+    margin-bottom: 36px;
+}
+.product__add {
+    display: flex;
+    justify-content: center;
+}   
+.product__add-button{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 12px;
+    background-color: var(--coffee);
+    padding: 12px 20px;
+
+}
+.product__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 36px;
+}
+.product__rating p{
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--coffee);
+    text-transform: uppercase;
+}
+.product__item-title{
+    font-family: "Righteous";
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.product__price{
+    color: var(--coffee);
+}
+.product__discount{
+    text-decoration: line-through 1px;
+}
+
+.product__view-all{
+    display: flex;
+    justify-content: center;
+}
+.product__view-all a{
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 36px;
+    background-color: var(--coffee);
+}
+
+/* Machine */
+.machine {
+    margin-bottom: 140px;
+}
+.machine-inner {
+    display: flex;
+    gap: 160px;
+    padding: 80px;
+    padding-left: 169px;
+    background-color: var(--bg);
+}
+.machine__title {
+    font-family: "Righteous";
+    font-size: 48px;
+    line-height: 62.4px;
+}
+.machine__subtitle {
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    margin: 36px 0;
+    text-transform: capitalize;
+}
+.machine__btn{
+    display: flex;
+}
+.machine__btn a{
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 36px;
+    background-color: var(--coffee);
+}
+
+/* Menu */
+.menu {
+    margin-bottom: 140px;
+}
+.menu-top {
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--coffee);
+    margin-bottom: 12px;
+}
+.menu__title {
+    font-family: "Righteous";
+    text-align: center;
+    margin-bottom: 56px;
+}
+.menu__items { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #32323D;
+    padding: 24px;
+}
+.menu__content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.menu__item-name {
+    font-family: "Righteous";
+    font-size: 24px;
+}
+.menu__item-price {
+    font-family: "Urbanist";
+    font-size: 18px;    
+    font-weight: 600;
+    color: var(--coffee);
+}
+
+/* Review */
+.review {
+    margin-bottom: 140px;
+    font-family: "Urbanist";
+}
+.review__top {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--coffee);
+}
+.review__title {
+    font-family: "Righteous";
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 56px;
+}
+.review__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 36px;
+}
+.review__item {
+    display: flex;
+    gap: 24px;
+    background-color: var(--bg);
+    padding: 40px;
+}
+.review__name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 28px;
+    margin-bottom: 4px;
+}
+.review__job {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+.review__info {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.review__rating {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 60px;
+}
+.review__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review__page p{
+    font-family: "Urbanist";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--coffee);
+}
+.review__loading {
+    position: relative;
+}
+.review__loading img:last-child{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.review__swaper-left img{
+    padding: 16px;
+    background-color: #121315;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.review__swaper-right img{
+    padding: 16px;
+    background-color: var(--coffee);
+    border-radius: 50%;
+}
+
+/* Reservation */
+
+.reservation {
+    margin-bottom: 140px;
+}
+
+.reservation-inner {
+    display: flex;
+    background-color: var(--bg);
+    font-family: "Urbanist";
+}
+.reservation__content {
+    padding: 72px 48px;
+}
+.reservation__top {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--coffee);
+
+}
+.reservation__title {
+    font-family: "Righteous";
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 56px;
+}
+.reservation__inputs input {
+    background-color: #14110E;
+    color: rgba(255, 255, 255, 0.8);
+    width: 489px;
+    height: 64px;
+    margin-bottom: 24px;
+    border: none;
+    padding: 0 10px;
+}
+
+.reservation__inputs input:last-child{
+    margin-bottom: 56px;
+}
+.reservation__btn{
+    display: flex;
+    justify-content: center;
+}
+.reservation__btn a{
+    background-color: var(--coffee);
+    padding: 20px 36px;   
+}
+
+/* News */
+.news {
+    margin-bottom: 140px;
+}
+.news-inner {
+    font-family: "Urbanist";
+}
+.news__top {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--coffee);
+}
+.news__title {
+    font-family: "Righteous";
+    text-align: center;
+    font-size: 48px;
+    margin-top: 12px;
+    margin-bottom: 56px;
+}
+.news__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 36px;
+}
+.news__content {
+    padding: 24px;
+    padding-top: 20px;
+    background-color: var(--bg);
+}
+.news__by-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+}
+.news__by span{
+    color: var(--coffee);
+}
+.news__name {
+    font-family: "Righteous";
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.news__read-more {
+    display: flex;
+    align-items: center;
+    color: var(--coffee);
+    gap: 8px;
+}
+
+/* Footer */
+.footer {
+    font-family: "Urbanist";
+}
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+.footer__nav a{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.footer__nav a:last-child{
+    margin-right: 0;
+}
+.footer__login {
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+}
+.footer__login input{
+    background-color: var(--bg);
+    border: none;
+    padding: 21px 28px;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 36px;
+    
+}
+.footer__login-btn{
+    position: absolute;
+    right: 0;
+
+    background-color: var(--coffee);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.footer__bottom{
+    background-color: var(--bg);
+    padding: 32px 0;
+}
+.footer__bottom p{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}

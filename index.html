@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>CoffeeShop</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__left">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Reservation</a>
+                </div>
+                <div class="header__logo">
+                    <img src="images/icons/Logo.png" alt="logo">
+                </div>
+                <div class="header__right">
+                    <div class="header__right-nav">
+                        <a href="#">Pages</a>
+                        <a href="#">Shop</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <a class="header__search" href="#">
+                        <img src="images/icons/search.svg" alt="search">
+                    </a>
+                    <a class="header__bag" href="#">
+                        <img src="images/icons/shopping-bag.svg" alt="bag">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="home">
+        <div class="container">
+            <div class="home-inner">
+                <div class="home__content">
+                    <h1>Enjoy Your <br>Morning Coffee.</h1>
+                    <p>The coffee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to Opportunity</p>
+                    <a href="#">Test Coffee</a>
+                </div>
+                <div class="home__video" href="#">
+                    <a class="home__play-btn" href="#">
+                        <img src="images/Play.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+<!--
+    <section class="preference">
+        <div class="container">
+            <div class="preference-inner">
+                <div class="preference__box">
+                    <p><span>01</span>Best Coffee Flavour</p>
+                    <img src="images/pref-1.png" alt="first">
+                </div>
+                <div class="preference__box">
+                    <p><span>02</span>Place to get lost</p>
+                    <img src="images/pref-2.png" alt="second">
+                </div>
+                <div class="preference__box">
+                    <p><span>03</span>Proper roesting</p>
+                    <img src="images/pref-3.png" alt="third">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history">
+        <div class="container">
+            <div class="history-inner">
+                <div class="history__gallery">
+                    <div class="history__gallery-1">
+                        <img src="images/history-1.png" alt="coffee">
+                        <img src="images/history-2.png" alt="coffee">
+                    </div>
+                    <div>
+                        <img src="images/vertical-cofee.png" alt="vertical-cofee">
+                    </div>
+                </div>
+                <div class="history__content">
+                    <p class="history__our">
+                        Our history
+                    </p>
+                    <h1>Create a<br> new story with us</h1>
+                    <p class="history__subtitle">
+                        mauris rhoncus in imperdiet placerat. vestibu emismd nisl suscirpit ligula volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nibh maximus, est eu, mattis nuce. preasent ut quam quis quam venen
+                        atis fringilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="product">
+        <div class="container">
+            <div class="product-inner">
+                <p class="product-top">Popular Product</p>
+                <h2 class="product__title">Coffee popular Product</h2>
+                <div class="product__items">
+                    <div class="product__item">
+                        <img src="images/product-1.png" alt="coffee-bag">   
+                        <h4 class="product__item-title">brazil coffee gred</h4>
+                        <div class="product__add" href="#">
+                            <a class="product__add-button">
+                                <img src="images/icons/cart.svg" alt="cart">
+                                <p>Add to cart</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <img src="images/product-1.png" alt="coffee-bag">   
+                        <div class="product__rating">
+                            <p>coffee</p>
+                            <div class="product__stars">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-off.png" alt="off">
+                            </div>
+                        </div>
+                        <h4 class="product__item-title">brazil coffee gred</h4>
+                        <p>Price - <span class="product__price">$320.00/</span> <span class="product__discount">$358</span></p>
+                    </div>
+                    <div class="product__item">
+                        <img src="images/product-1.png" alt="coffee-bag">   
+                        <div class="product__rating">
+                            <p>coffee</p>
+                            <div class="product__stars">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-on.svg" alt="on">
+                                <img src="images/icons/star-off.png" alt="off">
+                            </div>
+                        </div>
+                        <h4 class="product__item-title">brazil coffee gred</h4>
+                        <p>Price - <span class="product__price">$320.00/</span> <span class="product__discount">$358</span></p>
+                    </div>
+                </div>
+                <div class="product__view-all">
+                    <a href="#">View all product</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="machine">
+        <div class="container">
+            <div class="machine-inner">
+                <div class="machine__image">
+                    <img src="images/coffee-machine.png" alt="coffee-machine">
+                </div>
+                <div class="machine__content">
+                    <h1 class="machine__title">Coffee <br>machine, buy for home</h1>
+                    <p class="machine__subtitle">mauris rhoncus in imperdiet           placerat.  vestibu emismd nisl suscirpit ligula
+                        volutpat, a feyguat urn maxmaus. cars massa nibhtincidunt. donec et nib
+                         maximus, est eu, mattis nuce. preasent ut quam quis quam venen atis fri
+                        ngilla. morbi vastibulum id tells mmodo mattis. aliauam erat volutpal.
+                    </p>
+                    <div class="machine__btn">
+                        <a href="#">Discover now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="container">
+            <div class="menu-inner">
+                <p class="menu-top">Menu</p>
+                <h1 class="menu__title">Coffee popular menu</h1>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-1.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-2.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-3.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-4.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-5.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-6.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-7.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__content">
+                            <img class="menu__image" src="images/menu/menu-8.png" alt="" >
+                            <p class="menu__item-name">Americano roasted blend</p>
+                        </div>
+                        <p class="menu__item-price">$12.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container">
+            <div class="review-inner">
+                <p class="review__top">Testimonial</p>
+                <h1 class="review__title">Says our customers</h1>
+                <div class="review__items">
+                    <div class="review__item">
+                        <div class="review__profile">
+                            <img src="images/review/review-1.png" alt="profile-photo">
+                            <p class="review__name">John Smith</p>
+                            <p class="review__job">Product Designer</p>
+                        </div>
+                        <div class="review__info">
+                            <p>Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+                            </p>
+                            <div class="review__rating">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__item">
+                        <div class="review__profile">
+                            <img src="images/review/review-2.png" alt="profile-photo">
+                            <p class="review__name">Brett Lee</p>
+                            <p class="review__job">User Experience Designer</p>
+                        </div>
+                        <div class="review__info">
+                            <p>Education WP is a special build for effective education & Learning Management System site. Education WP is the next generation & one of the best education WordPress themes which all the strength of eLearning WP..
+                            </p>
+                            <div class="review__rating">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                                <img src="images/review/review-star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review__bottom">
+                    <div class="review__page">
+                        <p>2/6 People</p>
+                        <div class="review__loading">
+                            <img src="images/review/review-load.png" alt="loading">
+                            <img src="images/review/review-load-bg.png" alt="loading">
+                        </div>
+                    </div>
+                    <div class="review__swaper">
+                        <a class="review__swaper-left" href="#">
+                            <img src="images/review/arrow-left.svg" alt="left">
+                        </a>
+                        <a class="review__swaper-right" href="#">
+                            <img src="images/review/arrow-right.svg" alt="right">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation">
+        <div class="container">
+            <div class="reservation-inner">
+                <div class="reservation__image">
+                    <img src="images/reserv-map.png" alt="map">
+                </div>
+                <div class="reservation__content">
+                    <p class="reservation__top">Reservation</p>
+                    <h1 class="reservation__title">Booking a table</h1>
+                    <div class="reservation__inputs">
+                        <input type="text" placeholder="4 Person">
+                        <input type="date" value="12.25.2020">
+                        <input type="time">
+                    </div>
+                    <div class="reservation__btn">
+                        <a href="#" class="reservation__btn">
+                            BOOK S TABLE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news-inner">
+                <p class="news__top">Testimonial</p>
+                <h1 class="news__title">Our lates news</h1>
+                <div class="news__items">
+                    <div class="news__item">
+                        <img src="images/news/news-1.png" alt="news-picture">
+                        <div class="news__content">
+                            <div class="news__by-date">
+                                <p class="news__by"><span>By:</span> rasaline</p>
+                                <p class="news__date">23.01.2021</p>
+                            </div>
+                            <p class="news__name">Ideal coctails from barmen...</p>
+                            <a class="news__read-more" href="#">
+                                Read more <img src="images/news/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="images/news/news-2.png" alt="news-picture">
+                        <div class="news__content">
+                            <div class="news__by-date">
+                                <p class="news__by"><span>By:</span> rasaline</p>
+                                <p class="news__date">23.01.2021</p>
+                            </div>
+                            <p class="news__name">Ideal coctails from barmen...</p>
+                            <a class="news__read-more" href="#">
+                                Read more <img src="images/news/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="images/news/news-3.png" alt="news-picture">
+                        <div class="news__content">
+                            <div class="news__by-date">
+                                <p class="news__by"><span>By:</span> rasaline</p>
+                                <p class="news__date">23.01.2021</p>
+                            </div>
+                            <p class="news__name">Ideal coctails from barmen...</p>
+                            <a class="news__read-more" href="#">
+                                Read more <img src="images/news/arrow-right.svg" alt="arrow-right">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <img src="images/icons/Logo.png" alt="" class="footer__logo">
+                <nav class="footer__nav">
+                    <a href="#">Home</a>
+                    <a href="#">Reservation</a>
+                    <a href="#">Menu</a>
+                    <a href="#">About</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Blogs</a>
+                </nav>
+                <div class="footer__login">
+                    <input type="text" name="Enter your email" placeholder="Enter Your Email">
+                    <a class="footer__login-btn" href="#">
+                        <img src="images/icons/arrow-right.svg" alt="arrow-right">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>e-Tennis © 2021. All rights reserved.</p>
+        </div>
+    </footer>
+    -->
+    <script src="js.js"></script>
+</body>
+</html>
